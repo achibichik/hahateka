@@ -1,0 +1,49 @@
+/* Стили для body, header и footer прописаны в layout.css */
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4vh;
+    align-items: center;
+}
+.steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 8vh;
+}
+
+.step1, .step2, .step3 {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.step2{
+    position: relative;
+}
+
+.step3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.stepImages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkButton  {
+    color: black;
+    cursor: pointer;
+    font-size: 4vh;
+    text-decoration: underline;
+    text-align: center;
+}
+.linkButton :hover {
+    text-decoration: underline;
+}
+

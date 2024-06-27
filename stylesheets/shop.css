@@ -1,0 +1,166 @@
+/* Стили для body, header и footer прописаны в layout.css */
+
+h2 {
+    font-size: 6vh;
+}
+
+.firstLine, .secondLine, .thirdLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10vw;
+}
+
+.firstLine {
+    margin-top: 8vh;
+}
+
+.secondLine {
+    gap: 7vw;
+}
+
+/* firstLine объекты */
+
+.note {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.yellow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8vh;
+    margin-left: -22vw;
+}
+
+.brown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: -8vw;
+}
+
+.priceBrown {
+    margin-right: 6vw;
+}
+
+/* secondLine объекты */
+
+.bag {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.bascet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6vh;
+}
+
+.crocs {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 4vh;
+    margin-top: -4vh;
+}
+
+.priceCrocs {
+    margin-right: 6vw;
+}
+
+/* thirdLine объекты */
+
+.ball {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -60vh;
+}
+
+.priceBall {
+    margin-left: -6vw;
+    margin-top: -20vh;
+}
+
+.pink {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: -30vw;
+    margin-top: -20vh;
+    gap: 2vw;
+    z-index: 10;
+}
+
+.pricePink {
+    width: max-content;
+}
+
+.black {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: -10vw;
+    gap: 8vh;
+}
+
+.priceBlack {
+    margin-right: -4vw;
+}
+
+.blue {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -30vh;
+    margin-left: 4vw;
+    z-index: 10;
+}
+
+.priceBlue {
+    margin-bottom: -8vh;
+}
+
+.bottle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -30vw;
+}
+
+.priceBottle {
+    margin-bottom: -30vh;
+    margin-right: -2vw;
+}
+
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 5vh;
+    }
+    .item {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 3vh;
+    }
+    .item {
+        transform: scale(2);
+    }
+}
+
+@media (max-width: 360px) {
+    h2 {
+        font-size: 2vh;
+    }
+    .item {
+        transform: scale(3);
+    }
+}
