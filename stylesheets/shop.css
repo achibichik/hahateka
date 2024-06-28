@@ -138,29 +138,240 @@ h2 {
     margin-right: -2vw;
 }
 
-@media (max-width: 1024px) {
+/* Для экранов шириной до 1440px */
+@media (max-width: 1440px) {
     h2 {
-        font-size: 5vh;
+        font-size: 5.5vh;
     }
-    .item {
-        transform: scale(1);
+    .firstLine, .secondLine, .thirdLine {
+        margin: 0 9vw;
+    }
+    .yellow {
+        margin-left: -20vw;
+    }
+    .brown {
+        margin-left: -7vw;
+    }
+    .priceBrown {
+        margin-right: 5vw;
+    }
+    .priceCrocs {
+        margin-right: 5vw;
+    }
+    .priceBall {
+        margin-left: -5vw;
+    }
+    .pink {
+        margin-left: -28vw;
+    }
+    .black {
+        margin-left: -9vw;
+    }
+    .blue {
+        margin-left: 3vw;
+    }
+    .bottle {
+        margin-left: -28vw;
     }
 }
 
+/* Для экранов шириной до 1366px */
+@media (max-width: 1366px) {
+    h2 {
+        font-size: 5vh;
+    }
+    .firstLine, .secondLine, .thirdLine {
+        margin: 0 8vw;
+    }
+    .yellow {
+        margin-left: -18vw;
+    }
+    .brown {
+        margin-left: -6vw;
+    }
+    .priceBrown {
+        margin-right: 4vw;
+    }
+    .priceCrocs {
+        margin-right: 4vw;
+    }
+    .ball {
+        margin-left: 20vw;
+    }
+    .priceBall {
+        margin-left: -4vw;
+    }
+    .pink {
+        margin-left: -40vw;
+    }
+    .pricePink {
+        margin-right: -4vw;
+    }
+    .black {
+        margin-left: -12vw;
+    }
+    .priceBlack {
+        margin-left: -8vw;
+    }
+    .blue {
+        margin-left: 2vw;
+        margin-top: -12vh;
+    }
+    .priceBlue {
+        margin-bottom: -2vw;
+    }
+    .bottle {
+        margin-left: -38vw;
+    }
+    .priceBottle {
+        margin-bottom: -55vh;
+        margin-right: -2vw;
+    }
+}
+
+/* Для экранов шириной до 1024px */
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 4.5vh;
+    }
+    .firstLine, .secondLine, .thirdLine {
+        flex-direction: column;
+        margin: 0 7vw;
+    }
+    .yellow {
+        margin-left: -16vw;
+        margin-top: -10vh;
+        flex-direction: row;
+    }
+    .brown {
+        margin-left: -5vw;
+        margin-top: -15vh;
+        flex-direction: row;
+        align-items: center;
+    }
+    .priceBrown {
+        margin-right: 3vw;
+    }
+    .bag {
+        margin-left: -5vw;
+        margin-top: -15vh;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .crocs {
+        margin-left: -5vw;
+        flex-direction: row;
+        align-items: center;
+    }
+    .priceCrocs {
+        margin-right: 3vw;
+        margin-top: 10vh;
+    }
+    .ball {
+        margin-left: -5vw;
+        margin-top: -15vh;
+        flex-direction: row;
+    }
+    .priceBall {
+        margin-left: -3vw;
+    }
+    .pink {
+        margin-left: -5vw;
+        margin-top: -15vh;
+        flex-direction: row;
+    }
+    .black {
+        margin-left: 15vw;
+        margin-top: -2vh;
+        flex-direction: row-reverse;
+    }
+    .blue {
+        margin-left: -25vw;
+        margin-top: -6vh;
+        flex-direction: row;
+        align-items: center;
+    }
+    .bottle {
+        margin-left: -5vw;
+        margin-top: -16vh;
+        flex-direction: row-reverse;
+    }
+    .priceBottle {
+        margin-bottom: -5vh;
+        margin-left: -12vw;
+    }
+}
+
+/* Для экранов шириной до 768px */
 @media (max-width: 768px) {
     h2 {
         font-size: 3vh;
     }
-    .item {
-        transform: scale(2);
+    .firstLine, .secondLine, .thirdLine {
+        margin: 0 6vw;
+    }
+    .yellow {
+        margin-left: -14vw;
+    }
+    .brown {
+        margin-left: -4vw;
+    }
+    .priceBrown {
+        margin-right: 2vw;
+    }
+    .priceCrocs {
+        margin-right: 2vw;
+    }
+    .priceBall {
+        margin-left: -2vw;
+    }
+    .pink {
+        margin-left: -22vw;
+    }
+    .black {
+        margin-left: -6vw;
+    }
+    .blue {
+        margin-left: 0vw;
+    }
+    .bottle {
+        margin-left: -22vw;
     }
 }
 
+/* Для экранов шириной до 360px */
 @media (max-width: 360px) {
     h2 {
         font-size: 2vh;
     }
-    .item {
-        transform: scale(3);
+    .firstLine, .secondLine, .thirdLine {
+        margin: 0 5vw;
+    }
+    .yellow {
+        margin-left: -12vw;
+    }
+    .brown {
+        margin-left: -3vw;
+    }
+    .priceBrown {
+        margin-right: 1vw;
+    }
+    .priceCrocs {
+        margin-right: 1vw;
+    }
+    .priceBall {
+        margin-left: -1vw;
+    }
+    .pink {
+        margin-left: -20vw;
+    }
+    .black {
+        margin-left: -5vw;
+    }
+    .blue {
+        margin-left: -1vw;
+    }
+    .bottle {
+        margin-left: -20vw;
     }
 }

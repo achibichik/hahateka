@@ -7,10 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Назначаем обработчик события dragstart для всех изображений в stepImages
     stepImages.forEach(img => {
-        img.addEventListener('dragstart', () => {
-            handleDragStart()
-            
-        });
+        img.addEventListener('dragstart', handleDragStart);
 
         width=img.offsetWidth
         hieght=img.offsetHeight
@@ -49,8 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const offsetX = event.clientX - rect.left;
             const offsetY = event.clientY - rect.top;
 
-            console.log(draggedImg.offsetHeight)
-
             // Устанавливаем позицию изображения
             newImg.style.top = `${offsetY - (hieght/2.5)}px`; // Выравниваем по центру
             newImg.style.left = `${offsetX - (width/2.5)}px`;
@@ -60,5 +55,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    document.addEventListener('DOMContentLoaded', function() {
+        const linkButton = document.querySelector('.linkButton');
+        const formContainer = document.querySelector('.form-container');
+        const submitButton = document.querySelector('.submit-button');
+
+        linkButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            formContainer.style.display = 'block';
+        });
+
+        submitButton.addEventListener('click', function() {
+            formContainer.style.display = 'none';
+        });
+    });
     
 });
